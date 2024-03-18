@@ -16,7 +16,8 @@ ${PasswordEdx}                                    Veronkie1!
 #xpath variables: Login and Logout Methods
 ${UsernameFieldEdx}                               name:emailOrUsername
 ${PasswordFieldEdx}                               name:password
-${ButtonLoginEdx}                                 xpath://span[contains(text(),'Sign in')][1]
+${ButtonLoginEdx}                                 id:onetrust-group-container
+#xpath://span[contains(text(),'Sign in')][1]
 ${ButtonAccountID}                                xpath://html[1]/body[1]/div[1]/div[1]/div[1]/header[1]/div[2]/button[1]
 ${ButtonProfile}                                  xpath://a[normalize-space()='Profile'][1]
 ${ButtonLogoutEdx}                                xpath://html[1]/body[1]/form[1]/table[1]/tbody[1]/tr[1]/td[1]/input[1]
