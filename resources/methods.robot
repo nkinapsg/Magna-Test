@@ -31,6 +31,7 @@ Given I am on the website homepage
     Call Method         ${options}       add_argument   --disable-gpu
     Call Method         ${options}       add_argument   --disable-infobars
     Open Browser       ${SiteUrlEdx}        ${Browser}        ${options} 
+    Set Window Size    1920    1024
     Maximize Browser Window
     Wait15
 
@@ -77,7 +78,7 @@ Given I am on the amazon website homepage
 
 When I click on the "Shop" button
     click enabled and visible button ${BackPackSauceDemo}
-    wait2
+    Wait2
 
 And I select a product to purchase   
     click enabled and visible button ${BackPackSauceDemo} 
